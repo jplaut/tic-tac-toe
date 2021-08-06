@@ -42,7 +42,7 @@ const Board = ({ classes, board, onMove }) => {
     <Grid container>
       {board.map((row, rIdx) => (
         <Grid key={rIdx} item xs={12} className={classes.row}>
-          <Grid container justify="center">
+          <Grid container justifyContent="center">
             {row.map((col, cIdx) => {
               // the border style for a square as defined by the styles object above
               const border = classes[`${rIdx}_${cIdx}`] || '';
