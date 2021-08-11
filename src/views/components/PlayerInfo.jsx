@@ -7,7 +7,7 @@ const PlayerInfo = ({ player, gameover }) => {
 
   return (
     <div>
-      <Typography variant="headline">
+      <Typography variant="h4">
         {gameover && "Gameover!"}
         {!gameover && `Player: ${player}`}
       </Typography>
